@@ -1,0 +1,53 @@
+# Python bytecode
+*.py[cod]
+__pycache__/
+*.so
+
+# Django database
+db.sqlite3
+
+# Django migrations - optional to ignore pyc files only
+**/__pycache__/
+
+# Environment variables
+.env
+
+# Media uploads
+/media/
+media/
+
+# Static files collected (not usually tracked in repo)
+staticfiles/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Test coverage
+htmlcov/
+coverage.xml
+*.cover
+.cache
+
+# Python virtual environment packaging
+*.egg-info/
+dist/
+build/
+
+# Git itself
+.gitignore
