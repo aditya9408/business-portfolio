@@ -31,3 +31,5 @@ Thumbs.db
 # media/
 Content/
 media/
+
+.env
