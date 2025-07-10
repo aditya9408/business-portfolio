@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django database
+db.sqlite3
+
+# Environment variables / secrets
+.env
+
+# Virtual environments
+venv/
+env/
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Editor directories and settings
+.vscode/
+.idea/
+
+# Static/media files (optional)
+# Uncomment if you want to ignore user-uploaded files
+# media/
+Content/
+media/
