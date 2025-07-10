@@ -51,3 +51,8 @@ build/
 
 # Git itself
 .gitignore
+
+
+__pycache__/
+*.pyc
+*.pyo
