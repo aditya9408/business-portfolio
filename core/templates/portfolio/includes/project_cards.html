@@ -1,0 +1,28 @@
+{% for project in projects %}
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+    <div class="card w-100">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal{{ project.id }}">
+        <img src="{{ project.image.url }}" class="card-img-top" alt="{{ project.title }}" loading="lazy">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title text-warning">{{ project.title }}</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="projectModal{{ project.id }}" tabindex="-1" aria-labelledby="modalLabel{{ project.id }}" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="modalLabel{{ project.id }}">{{ project.title }}</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="{{ project.image.url }}" alt="{{ project.title }}" class="img-fluid rounded mb-3 w-100" style="max-height: 400px; object-fit: cover;">
+          <p>{{ project.description|linebreaks }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
